@@ -1,0 +1,51 @@
+<!--
+Created by lisha on 16/11/30.
+describe : 玛丽玛丽轰 天平支付页
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>玛丽玛丽轰</title>
+</head>
+<body class="L-spirit-rule" style="height:100%;">
+
+<p class="L-spirit-rechage-title">充值PU币获取抽奖券</p>
+
+<div class="L-PUB-pay"> 
+    <ul>
+        <li>
+            9.9元
+        </li>
+        <li>
+            19.8元
+        </li>
+      
+    </ul>
+</div>
+
+<img class="rechage-btn" src="img/recha.png" id="puCharge">
+
+<div class="L-rechage-con">
+	提示：充值9.9元可免费获得2张抽奖券，充值19.8元可免费获得4张抽奖券。此次活动中充值的PU币可以通过PU币提现方式进行<a href="">全部返还</a>
+</div>
+
+</body>
+</html>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap.min.js"></script>
+<script>
+	//充值
+	$( function(){
+	    $(".L-PUB-pay li").click(function(){
+	        $(".L-PUB-focas").removeClass("L-PUB-focas");
+	        $(this).addClass("L-PUB-focas");
+	    });
+	});
+</script>

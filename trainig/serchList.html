@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>培训专栏</title>
+    <link href="css/style.css?v=001" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+
+<body>
+	    <!--搜索-->
+    <header class="L-search-header">
+    	<div class="L-search">
+	        <p class="h_index_input">
+	            <input id="searchInput" placeholder="请输入搜索内容">
+	        </p>
+	        <p class="h_index_btn">
+	            <button>搜索</button>
+	        </p>
+	    </div>
+    </header>
+
+	<div class="L-search-con">
+
+		<ul>
+		    <li class="clearfix">
+		        <div class="L-search-left">
+		        	<p>高级软件工程师</p>
+		        	<p>第二节 LVM逻辑卷的拉伸与缩小</p>
+		        </div>
+		        <div class="L-search-right">
+		        	<div>
+		        		<img src="img/liuZuo.png" />
+		        	</div>
+		        </div>
+		    </li>
+		    	    <li class="clearfix">
+		        <div class="L-search-left">
+		        	<p>高级软件工程师</p>
+		        	<p>第二节 LVM逻辑卷的拉伸与缩小</p>
+		        </div>
+		        <div class="L-search-right">
+		        	<div>
+		        		<img src="img/liuZuo.png" />
+		        	</div>
+		        </div>
+		    </li>
+		</ul>
+	</div>
+
+</body>
+</html>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+	var page=1;
+	var loadingStr = '<div class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
+	var noneStr = '<div class="nonestr">没有结果</div>';
+	var loadingShow = false;
+	var html = $(".L-search-con ul").html();
+	$(function () {
+		getdata();
+	});
+	
+	function getdata(){
+		if (!loadingShow) {
+			$(".L-search-con ul").append(loadingStr);
+			loadingShow = true;
+			getAjaxNews();
+		}
+	
+	}
+		
+	$(window).scroll(function(){
+		var document = window.document;
+		var top = document.body.scrollTop || document.documentElement.scrollTop
+				|| 0;
+		top += document.documentElement.clientHeight;
+		var height = document.documentElement.scrollHeight;
+		if (height - top < 1000) {
+			if (!loadingShow) {
+				$(".L-search-con ul").append(loadingStr);
+				loadingShow = true;
+				getAjaxNews();
+			}
+		}
+	});
+	
+	function getAjaxNews() {
+			$.ajax({
+				url: "#",
+				//type: 'get',
+				data: {
+					page: page
+				},
+				error: function () {
+				},
+				success: function (data) {
+					//if (data!='0') {
+						$(".spinner").hide();
+					    $(".L-search-con ul").append(html);
+					//	$(".square_comment_list").append(data);
+						$(".spinner").remove();
+						page++;
+						loadingShow = false;
+					//} else {
+					//	$(".spinner").hide();
+					//	$(".square_comment_list").append(noneStr);
+					//	$(".spinner").remove();
+					//}
+				}
+			});
+	}
+
+</script>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>测测你的膝关节还年轻吗？</title>
+</head>
+<body bgcolor="#eee9e2">
+<div class="question-c">
+<!--<header class="question-header">
+    <div class="question-time" id="timer">
+        25&emsp13;S
+    </div>
+</header>-->
+
+<article class="question-article">
+    <p class="question" data-question="">
+        <span class="question-no"> 问题载入中...</span>
+
+    <p class="question-p" data-answer="1">
+        <span class="question-a" >A</span>
+    <i id="answer-a">答案载入中...</i>
+    </p>
+    <p class="question-p" data-answer="2">
+        <span class="question-a">B</span>
+        <i id="answer-b">答案载入中...</i>
+    </p>
+    <p class="question-p" data-answer="3">
+        <span class="question-a">C</span>
+        <i id="answer-c">答案载入中...</i>
+    </p>
+    <p class="question-p" data-answer="4">
+        <span class="question-a">D</span>
+        <i id="answer-d">答案载入中...</i>
+    </p>
+</article>
+</div>
+
+
+<div class="h-back-cover">
+</div>
+<div class="h-back-loading">
+</div>
+<div class="h-back-timeover" >
+<img src="http://pic.pocketuni.net/data/sys_pic/question/timesOver.png">
+    <div>
+    <img src="http://pic.pocketuni.net/data/sys_pic/question/checkMyP.png" onclick="javascript:window.location.href='rank.html'">
+    <img src="http://pic.pocketuni.net/data/sys_pic/question/friend.png"  onclick="share();">
+    </div>
+</div>
+
+<div class="h-back-error">
+    <img src="http://pic.pocketuni.net/data/sys_pic/question/error.png">
+    <div>
+       <img src="http://pic.pocketuni.net/data/sys_pic/question/again.png" onclick="javascript:window.location.href='question.html'">
+       <img src="http://pic.pocketuni.net/data/sys_pic/question/checkpai.png" onclick="javascript:window.location.href='rank.html'">
+    </div>
+</div>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap.min.js"></script>
+<script src="js/question.js"></script>
+<script src="js/share.js"></script>
+</html>

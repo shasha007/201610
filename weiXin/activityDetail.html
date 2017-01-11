@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>我的PU</title>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+</head>
+<body>
+<!--头部说明-->
+<div class="w-head">
+	<img src="img/back.png" class="w-back" onclick="history.back(-1)">
+	<span>活动详情</span>
+	<a href="#" class="w-share"><img src="img/home.png" ></a>
+    <div class="dropdown H_Active_More">
+    <button type="button" class="btn dropdown-toggle" id="H_Active_Btn"
+            data-toggle="dropdown">
+        <i>...</i>
+    </button>
+    <ul class="dropdown-menu" id="H_Active_Menu" role="menu" aria-labelledby="H_GInfor_Btn">
+        <!--下拉选项-->
+        <li role="presentation">
+            <a role="menuitem" tabindex="1" href="#">取消报名</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="4" href="#">退出</a>
+        </li>
+    </ul>
+</div>
+</div>
+    <div class="activity-detaile">
+    	<div>
+            <div class="activity-pic pull-left">
+               <img class="img-responsive" src="img/img5.jpg">
+            </div>
+            <div class="activity-name">
+                <p>花王小王纸人气演唱会震撼来袭！</p>
+                <p>[报名后需签到也需要签退]</p>
+            </div>
+    	</div>
+    	<ul>
+    		<li>
+    			<div class="item-pic pull-left">
+	               <img class="img-responsive" src="img/literature.png">
+	            </div>
+	            <div class="activity-item">
+	            	文艺竞赛
+	            </div>
+    		</li>
+			<li>
+    			<div class="item-pic pull-left">
+	               <img class="img-responsive" src="img/free.png">
+	            </div>
+	            <div class="activity-item">
+	            	免费
+	            </div>
+    		</li>
+    		<li>
+    			<div class="item-pic pull-left">
+	               <img class="img-responsive" src="img/time2.png">
+	            </div>
+	            <div class="activity-item">
+	            	2016.12.12&nbsp;14:00~18:00
+	            </div>
+    		</li>
+    		<li>
+    			<div class="item-pic pull-left">
+	               <img class="img-responsive" src="img/positioning.png">
+	            </div>
+	            <div class="activity-item">
+	            	苏州大学教学楼1栋203
+	            </div>
+    		</li>
+    		<li>
+    			<div class="item-pic pull-left">
+	               <img class="img-responsive" src="img/credits.png">
+	            </div>
+	            <div class="activity-item">
+	            	<span>2.00&nbsp;</span>学分
+	            </div>
+    		</li>
+    		<li>
+    			<div class="item-pic pull-left">
+	               <img class="img-responsive" src="img/integral.png">
+	            </div>
+	            <div class="activity-item">
+	            	<span>2.00&nbsp;</span>积分
+	            </div>
+    		</li>
+    	</ul>
+    	<div class="activity-remark">
+    		<p>活动简介</p>
+    		<div>
+    			关门距离和时间（以发令枪声时间为准）为了保证参赛选手比赛安全，顺利，比赛期间比赛路线隔断设关门时间，限时对社会交通封闭。关门后，相应路段回复社会交通。
+    		</div>
+    	</div>
+    </div>
+    
+    <button class="L-complain">报名</button>
+    <!--活动为空时-->
+    <div class="L-activity-no">
+    	<img src="img/noActivity.png" />
+    	<p>暂无内容</p>
+    </div>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</html>

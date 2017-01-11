@@ -1,0 +1,812 @@
+.L-spirit-rule{
+	background: url(../img/back.png) repeat-y fixed 100%;
+  background-size: 100% 100%;
+}
+.L-spirit-charge{
+	background: url(../img/back01.png) repeat-y fixed 100%;
+  background-size: 100% 100%;
+}
+.L-spirit-index-article {
+  padding: 10px 15px 0;
+}
+.L-spirit-index-article  h3 {
+  padding-top: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+  /*color: #031b92;*/
+}
+.L-spirit-index-article p{
+	line-height: 20px;
+	padding-top: 10px;
+	color: #FFFFFF;
+}
+.L-spirit-index-a {
+  display: block;
+  clear: both;
+}
+.L-spirit-draw-title{
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.L-spirit-draw-line{
+	margin-top: 5%;
+}
+.L-spirit-draw-a {
+  display: block;
+  clear: both;
+}
+.L-spirit-draw-con{
+        height: auto;
+    margin-top: 5%;
+    padding-bottom: 8%;
+    color: #44abc1;
+    font-size: 12px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+
+}
+.L-spirit-index-footer {
+  /*position: relative;
+  bottom: 25px;
+  padding: 0;
+  margin: 0;*/
+ height: auto;
+ margin-top: 10%;
+ padding: 10px 15px;
+ display: block;
+ clear:both ;
+ background-color: #2d394b;
+ overflow: hidden;
+}
+.L-spirit-index-footer p {
+  height: 25px;
+  font-size: 12px;
+  color:#00b3ff;
+}
+.L-spirit-index-footer p:first-child {
+  font-size: 14px;
+}
+.start-btn {
+  display: block;
+  width: 45%;
+  margin: 10px auto;
+  text-align: center;
+}
+.L-spirit-draw-article{
+	width: 100%;
+	opacity: 0.6;
+}
+.L-invotation-article{
+    background: url(../img/invoBack.png) no-repeat 0px 0;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 60%;
+}
+.L-spirit-prize-article{
+	background: url(../img/prizeBack.png) no-repeat 20px 0;
+	background-size: 95% 95%;
+	width: 95%;
+	height: 60%;
+	margin-top: 20%;
+}
+.start-draw-btn{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.goOn-btn{
+    /* display: block; */
+    width: 35%;
+    margin: 10px auto;
+    /* padding-top: 100%; */
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    top: 57%;
+}
+.L-spirit-prize{
+    width: 40%;
+    display: block;
+    /* margin: 0 auto; */
+    /* padding-top: 40%; */
+    position: absolute;
+    left: 30%;
+    top: 31%;
+}
+.L-spirit-prize-a{
+	display: block;
+  clear: both;
+}
+.goods-detail-btn{
+    display: block;
+    width: 35%;
+    margin: 10px auto;
+    text-align: center;
+    position: absolute;
+    top: 57%;
+    left: 51%;
+}
+.invotation-detail-btn{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+.friend-detail-btn{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    position: absolute;
+    top: 79%;
+    /* left: 56%; */
+}
+.L-friend-list{
+	position: absolute;
+    top: 98%;
+    width: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16px;
+	color: #FFFFFF;
+	border-bottom: 1px solid RGB(40,60,186);
+}
+.L-friend-list span:first-child{
+	display: block;
+	float: left;
+}
+.L-friend-list span:nth-child(2){
+	float: right;
+}
+.L-friend-div{
+	position: absolute;
+    top: 105%;
+    width: 100%;
+    overflow: hidden;
+}
+.L-friend-ul{
+	/*position: absolute;
+    top: 105%;*/
+    width: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+.L-friend-ul li{
+    height: 25px;
+    min-height: 25px;
+    max-height: 25px;
+    /* margin-top: 5px; */
+    /* margin: 0 5%; */
+    line-height: 25px;
+    font-size: 14px;
+}
+.L-friend-ul span:first-child{
+	display: block;
+	float: left;
+}
+.L-friend-ul span:nth-child(2){
+	float: right;
+}
+.L-friendEmpty{
+	/*position: absolute;
+    top: 105%;*/
+	width: 90%;
+	height: 100px;
+    /*height: auto;*/
+    margin-left: 5%;
+}
+.L-friendEmpty span{
+	margin-top: -10%;
+    display: block;
+    margin-left: 20%;
+    color: #fff;
+    font-size: 12px;
+}
+.L-friendEmpty img{
+	width: 100%;
+    padding-top: 2%;
+    vertical-align: middle;
+}
+.L-invotation-remark{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    position: absolute;
+    top: 69%;
+    /* left: 56%; */
+    color: RGB(54,70,175);
+}
+.L-spirit-name{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    width: 60%;
+}
+.L-spirit-con{
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    /* left: 30%; */
+    font-size: 18px;
+    font-weight: bold;
+    color: RGB(30,40,76);
+    text-align: center;
+}
+.L-spirit-con span{
+	color: RGB(183,1,66);
+}
+.L-prize-name{
+    position: absolute;
+    top: 20%;
+    /* left: 25%; */
+    font-size: 12px;
+    /* font-weight: bold; */
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.L-prize-name p:nth-child(2){
+	font-size: 18px;
+	font-weight: bold;
+}
+.L-spirit-prize-article > i {
+	display: block;
+    width: 35%;
+    height: 25%;
+    float: right;
+    background: url(../img/close.png) no-repeat 0 0;
+    background-size: 35% 25%;
+    cursor: pointer;
+    /* margin-top: -15px; */
+    position: absolute;
+    top: 72%;
+    left: 41%;
+}
+.L-spirit-detaile-article{
+    /*background: url(../img/detailBack.png) repeat-y fixed 100%;
+    background-size: 100% 100%;*/
+    /* width: 100%; */
+     /*height: 100%;*/ 
+    /* margin-top: 20px; */
+    /* height: 100%; */
+    /* margin-top: 20px; */
+    /*position: relative;
+    top: -85%;*/
+    /* height: 80%; */
+   position: absolute;
+    top: 2%;
+    width: 100%;
+    /*max-width: 640px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;*/
+}
+.ok-btn{
+    width: 70%;
+    text-align: center;
+    /* position: absolute; */
+    /* left: 27%; */
+    /* top: 62%; */
+    padding-top: 4%;
+}
+.L-spirit-details{
+    /* position: absolute; */
+    /* top: 15%; */
+    width: 100%;
+    padding-top: 18%;
+}
+.L-spirit-details h4{
+	padding-bottom: 5%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #d9234e;
+	text-align: center;
+}
+.L-spirit-details div{
+	margin-left: 15%;
+	width: 70%;
+	border-bottom: 2px solid #855f00;
+	padding: 2% 0;
+}
+
+.L-spirit-details input{
+	width: 60%;
+	border: 0px;
+	background-color: transparent;
+	font-weight: bold;
+}
+.L-spirit-details textarea{
+	width: 60%;
+	height: 62px;
+	display: table-cell;
+	vertical-align: middle;
+	resize: none;
+	border-style: none;
+	outline: none;
+	background-color: transparent;
+	font-weight: bold;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.L-spirit-details span{
+	display: block;
+	width: 40%;
+	float: left;
+	color: RGB(60,60,60);
+}
+.L-address{
+	padding-top: 10%;
+}
+.L-spirit-prompt{
+    /* position: absolute; */
+    /* top: 72%; */
+    /* left: 15%; */
+    color: #9b5e18;
+    padding-top: 1%;
+    /* padding-left: 10%; */
+    margin-left: 15%;
+}
+.L-spirit-prompt p+p{
+	font-size: 12px;
+	width: 85%;
+}
+.L-spirit-index{
+	/*background: url(../img/indexBg.png) no-repeat 0 0px;
+    background-size: 100% 100%;*/
+   background-color: #FFFFFF;
+}
+.L-spirit-index header img:last-child{
+	width: 20%;
+	/* margin-top: -256%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.swiper-index{
+	margin-top: -136%;
+	text-align: center;
+}
+.L-spirit-index-article1{
+	color: #babec3;
+    font-size: 12px;
+    padding-top: 4%;
+    padding-left: 20%;
+    height: 12%;
+    width: 95%;
+}
+.L-spirit-index-article2{
+    color: #fff;
+    /* position: absolute; */
+    margin-top: 6%;
+    /* left: 25%; */
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.L-spirit-index-article2 a{
+	color: RGB(167,24,85);
+}
+.L-footer-div{
+    /* position: absolute; */
+    padding-top: 2%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.L-spirit-footer{
+	color: #9b9ca1;
+    font-size: 14px;
+}
+.L-spirit-footer2{
+	margin-left: 5%;
+	color: #9b9ca1;
+    font-size: 14px;
+}
+.L-merry-footer{
+    /* position: absolute; */
+    padding-top: 15%;
+    margin-bottom: 10%;
+    width: 100%;
+    padding-left: 3%;
+    overflow: hidden;
+    /* top: 103%; */
+    background-color: #fff;
+}
+.L-merry-submit{
+    /* position: absolute; */
+    margin-top: -27%;
+    margin-left: 80%;
+    width: 17%;
+}
+.L-merry-footer input{
+	border: none;
+	height: 40px;
+	width: 50%;
+	text-indent: 1em;
+	background-color: RGB(239,239,239);
+	font-size: 16px;
+}
+.L-merry-footer2{
+    /* position: absolute; */
+    /* top: 113%; */
+    padding-left: 3%;
+    color: RGB(227,41,100);
+    font-size: 12px;
+    padding-bottom: 8%;
+    /* padding-top: 2%; */
+    margin-top: -10%;
+    background-color: #FFFFFF;
+}
+.L-spirit-index-div{
+	display: block;
+  clear: both;
+      width: 100%;
+    text-align: center;
+}
+.L-spirit-index-join{
+	display: block;
+  clear: both;
+}
+.go-join-btn{
+    /* display: block; */
+    width: 82%;
+    /* margin: 0px auto; */
+    /* padding-top: 100%; */
+    text-align: center;
+    /* position: absolute; */
+    margin-left: 10%;
+    padding-top: 80%;
+}
+.L-spirit-draw{
+	background: url(../img/drawBg.png) repeat-y center 100%;
+    background-size: 100% 100%;
+}
+.my-prize-btn{
+    width: 100%;
+	margin-top: 7%;
+}
+.L-spirit-draw-imgs{
+     position: absolute; 
+     top: 20%; 
+    width: 91%;
+    /* margin: 0 auto; */
+    padding-left: 10%;
+}
+.L-spirit-draw-imgs img{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+.L-spirit-draw-imgs ul{
+	width: 100%;
+	overflow: hidden;
+}
+.L-spirit-draw-imgs ul li{
+	display: inline;
+	width:33%;
+	/*margin-right:10px;
+	margin-top:20px;*/
+	float:left;
+	list-style-position:outside;
+}
+.L-spirit-detail-a{
+	display: block;
+  clear: both;
+  text-align: center;
+}
+/*中奖结果页弹框*/
+.transparent {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*符咒剩余数量为0弹框*/
+.L-spirit-prize-num0{
+    background: url(../img/prizeBg2.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 63%;
+    margin-top: 27%;
+}
+.L-spirit-con2{
+    position: absolute;
+    top: 51%;
+    font-size: 14px;
+    /* color: #a65a24; */
+    width: 88%;
+    padding-left: 10%;
+}
+.L-spirit-num{
+    width: 100%;
+    display: block;
+    /* margin: 0 auto; */
+    /* padding-top: 40%; */
+    position: absolute;
+    /* left: 20%; */
+    top: 25%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.get-chance-btn{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.L-spirit-prize-num0 > i {
+	display: block;
+    width: 35%;
+    height: 25%;
+    float: right;
+    background: url(../img/close.png) no-repeat 0 0;
+    background-size: 35% 25%;
+    cursor: pointer;
+    /* margin-top: -15px; */
+    position: absolute;
+    top: 84%;
+    left: 41%;
+}
+.L-spirit-prize-buyPU0{
+    background: url(../img/chance0.png) no-repeat 20px 0;
+    background-size: 90% 90%;
+    width: 100%;
+    height: 17%;
+    margin-top: 50%;
+}
+
+.L-spirit-prize-buyPU0 > i {
+	display: block;
+    width: 35%;
+    height: 25%;
+    float: right;
+    background: url(../img/close.png) no-repeat 0 0;
+    background-size: 35% 25%;
+    cursor: pointer;
+    /* margin-top: -15px; */
+    position: absolute;
+    top: 59%;
+    left: 41%;
+}
+.L-spirit-buy{
+	width: 100%;
+    display: block;
+    /* margin: 0 auto; */
+    /* padding-top: 40%; */
+    /* position: absolute; */
+    /* left: 10%; */
+    /* top: 33%; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 11%;
+}
+.L-rechage-con{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: #7c8697;
+    padding: 0 5%;
+}
+.L-rechage-con a{
+	color: #00b3ff;
+}
+.L-spirit-rechage-title{
+	width: 80%;
+	position: absolute;
+	top: 8%;
+	left: 10%;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: RGB(255,171,0);
+}
+.rechage-btn{
+    /* display: block; */
+    width: 90%;
+    /* margin: 0px auto; */
+    /* padding-top: 100%; */
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    top: 32%;
+}
+.L-PUB-pay{
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+}
+.L-PUB-pay ul{
+
+}
+.L-PUB-pay li {
+    width: 30%;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    margin-top: 5px;
+    margin: 0 5%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    display: inline-block;
+    color: #FFFFFF;
+}
+.L-PUB-focas {
+    border: 2px solid #00b3ff !important;
+    color: #000000 !important;
+    background-color: #00b3ff;
+}
+.L-myPrize-title{
+	padding: 5% 5%;
+	color: #FFFFFF;
+}
+.L-myPrize-con{
+	height: 75%;
+	overflow-y: auto;
+}
+.L-myPrize-con ul{
+	color: #FFFFFF;
+	overflow: hidden;
+}
+.L-myPrize-con li{
+	height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    margin-top: 5px;
+    margin: 0 5%;
+    line-height: 45px;
+    font-size: 12px;
+	border-bottom: 1px solid #9e9e9e;
+}
+.mypr-addres-btn{
+    /* display: block; */
+    width: 90%;
+    /* margin: 0px auto; */
+    /* padding-top: 100%; */
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    top: 90%;
+}
+.L-left-name{
+	
+}
+.L-right-time{
+	float: right;
+}
+.L-prizeEmpty{
+	width: 80%;
+    height: auto;
+    margin-left: 15%;
+}
+.L-prizeEmpty img{
+    width: 80%;
+    padding-top: 20%;
+    vertical-align: middle;
+}
+.L-spirit-get-nums{
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+	color: RGB(244,148,4);
+	font-size: 20px;
+	font-weight: bold;
+}
+.L-spirit-get-nums span{
+	color: RGB(255,28,116);
+}
+/*loading*/
+.h-loading {
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    width: 60%;
+    z-index: 100;
+}
+.h-animate {
+    width: 188px;
+    height: 300px;
+    margin: 0 auto;
+    background: url(../img/gif.png) repeat-y;
+    -webkit-animation: standby 0.8s steps(8) infinite;
+    animation: standby 0.8s steps(8) infinite;
+}
+@-webkit-keyframes standby {
+    from {
+        background-position: 0 0px;
+    }
+    to {
+        background-position: -1504px 0px;
+    }
+}
+.loading-baground{
+	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*Error弹框*/
+.L-alurt-erro{
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #A65A24;
+	font-size: 18px;
+	font-weight: bold;
+}
+.L-prize-div{
+	padding: 5px 5px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* border: 1px solid #f7f7f7; */
+}
+.L-prize-li{
+	margin-right: 6%;
+	width: 44%;
+	/*height: 200px;*/
+    float: left;
+    margin-top: 3%;
+    /* border: 1px solid #f7f7f7; */
+}
+.L-prize-li img{
+	width: 100%;
+	height: 150px;
+}
+.L-prize-li > div {
+    /* width: 94%; */
+    padding: 5% 0;
+    color: RGB(28,28,28);
+    background-color: #FFFFFF;
+    line-height: 30px;
+    height: 65px;
+    font-size: 14px;
+}
+.L-prize-li > div > p {
+    padding: 0 5px;
+    line-height: 20px;
+    color: RGB(28,28,28);
+    overflow: hidden;
+}
+.L-prize-li > div > p:last-child{
+	font-size: 12px;
+	padding-bottom: 5%;
+}

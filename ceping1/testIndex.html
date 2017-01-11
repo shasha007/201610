@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html  ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>测评前台</title>
+    <!--<link href="bower_components/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css?v=001" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+
+<body class="L_test_Swap" ng-controller="mainController">
+
+    <header class="L-test clearfix" id="carousel">
+        <ul>
+            <li ng-repeat="category in categories" ui-sref="all({typeId:category.esid})">
+                {{category.name}}
+            </li>
+
+
+
+            <!--<li><a href="#/mentality">心理</a></li>-->
+            <!--<li><a href="#/zhiye">职业</a></li>-->
+            <!--<li class="L-test-on"><a href="#/star">星座</a></li>-->
+
+        </ul>
+    </header>
+
+    <div ui-view name="tab"></div>
+
+
+<script id="templates/mentality.html" type="text/ng-template">
+    <div class="L-fqsc">
+    <ul>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    </div>
+</script>
+
+<script id="templates/zhiye.html" type="text/ng-template">
+    <div class="L-fqsc">
+    <ul>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                        <img src="img/hot.png"  class="L-hot"/>
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>               
+        
+        <li>
+            <div class="L-fqsc-con">
+                <div class="L-bank-card">
+                        <img src="img/default.png">
+                </div>
+                <div class="L-WiOdFlag">
+                   <p>若儿女是父母的傀儡，反目成仇也就不足为奇</p> 
+                   <p>有多少次，我们注重过自己的健康，关注过身体</p>
+                   <div class="L-see-number">
+                   	<img src="img/wimg11.png" />&nbsp;300
+                   </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    </div>
+</script>
+<!--todo 为空时显示-->
+<!--<div class="h-repayNoTip">
+    <img  src="img/none.png">
+</div>-->
+
+<!--<div class="L-footBar">-->
+<!--给添加class表选中的状态-->
+<!--<a href="testIndex.html" class="L-footBar">-->
+<img class="L-footBar" src="img/mytest.png" />
+<!--</a>-->
+
+<!--</div>-->
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/iscroll.js"></script>
+<script src="js/order.js"></script>
+<script src="bower_components/angular.js"></script>
+<script src="bower_components/angular-ui-router.js"></script>
+<script src="js/testIndex.js"></script>
+<script type="text/javascript" src="controller/mainController.js"></script>
+<script type="text/javascript" src="controller/indexController.js"></script>
+
+</html>
+<script>
+    /*window.addEventListener('load', function () {
+        var $carousel = document.getElementById('carousel'),
+            $ul = $carousel.querySelector('ul'),
+            liArray = $carousel.querySelectorAll('li'),
+            liNum = liArray.length;
+        var liWidth = 0;
+        for (var i = 0; i < liNum; i++) {
+            liWidth = liWidth + liArray[i].clientWidth;
+            console.log(liArray[i].clientWidth)
+        }
+        console.log(liWidth)
+        //	  $ul.style.width = (liArray[0].clientWidth + 10)*(liNum+1) +"px";
+        $ul.style.width = liWidth + liNum + "px";;
+
+        var carousel = new iScroll("carousel", { hScrollbar: false, vScrollbar: false, bindToWrapper: false, });
+
+    });*/
+</script>

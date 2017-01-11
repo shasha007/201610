@@ -1,0 +1,145 @@
+<!--
+Created by lisha on 16/11/16
+describe : “我的青春我做主”全国大学生才艺大赛
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/reset.min.css" rel="stylesheet">
+    <link href="common/css/style.css" rel="stylesheet">
+    <title>“我的青春我做主”全国大学生才艺大赛</title>
+</head>
+<body>
+<div id="beautiful" v-cloak>
+    <img src="common/images/indexBanner.png">
+	<img src="common/images/shared.png"/>
+    <p class="tit">“我的青春我做主”全国大学生才艺大赛</p>
+    <nav>
+        <div>
+            <p>参与选手</p>
+
+            <p v-text="info.schools"></p>
+        </div>
+        <div>
+            <p>投票总数</p>
+
+            <p v-text="info.votes"></p>
+        </div>
+        <div>
+            <p>浏览量</p>
+
+            <p  v-text="info.pv"></p>
+        </div>
+        <div>
+            <p>奖金池</p>
+
+            <p v-text="info.money"></p>
+        </div>
+    </nav>
+    <div class="time">
+        <p class="titC"><img src="common/images/t1.png"></p>
+
+        <p class="start">报名时间&emsp13;:&emsp13;2016.11.21 09:00-2016.11.28 12:00</p>
+
+        <p class="end">投票时间&emsp13;:&emsp13;2016.11.28 12:00-2016.12.17 12:00</p>
+    </div>
+    <div class="time">
+        <p class="titC"><img src="common/images/t4.png"></p>
+
+        <p class="term">全国高校在校学生且为PU用户，有一点点才艺（不会,我们也不介意）</p>
+
+    </div>
+    <div class="rule">
+        <p class="titC"><img src="common/images/t2.png"></p>
+        <ul>
+            <li>PU登录用户（含APP和微信）每人每天可投十票，票不可重复投给同一位选手，且必须投完，票数才会生效；</li>
+            <li>非PU登录用户（微信端）每人每天可投一票；</li>
+            <li>奖金池封顶数值为100万点；</li>
+            <li>奖金池金额由系统计算得出。以PU币形式发放，PU币：人民币=1:1（奖金池金额=奖金池点数数值/50）；</li>
+            <li>仅通过PU账号登录投票且投给总决赛冠军的用户才享有最终奖金池分配奖励的资格，奖金池金额按用户给总决赛冠军获得者的投票奉献值分配；</li>
+            <li>PU在法律允许的条件下保留最终解释权。</li>
+        </ul>
+        <footer>
+            <button onclick="window.location='signIn.html'">我要报名</button>
+        </footer>
+    </div>
+    <!--<div class="inc">
+        <p class="titC"><img src="common/images/t3.png"></p>
+        <article>
+ 本次最美校园主题为推广各校校园风景文化。本着自主报名的机制，评选出PU口袋校园“2016江苏省十佳最美校园”。活动前期面向江苏省100所高校进行征集，最终有28所高校进入决赛。
+    通过“最美校园”的评比，旨在开展党的群众路线教育实践活动，培育和弘扬社会主义核心价值观。促进校园环境与人的和谐发展，强化环境育人，打造精品学校。同时丰富大学生“第二课堂”内容，培养当代大学生的学校归属感和荣誉感。
+        </article>
+        <!--<footer class="titC">查看更多</footer>-->
+    <!--</div>-->
+    <!--搜索-->
+    <div class="L-search">
+        <p class="h_index_input">
+            <input id="searchInput" @focus="getFocus"   @keyup.enter="SearchEnter" placeholder="请输入编号或姓名" v-model="inputValue">
+        </p>
+        <p class="h_index_clear" @click="clear">
+            <span></span>
+        </p>
+        <p class="h_index_btn">
+            <button @click="SearchEnter">搜索</button>
+        </p>
+    </div>
+    
+    <div class="indexSchool">
+        <ul class="indexUl clearfix">
+            <li v-for="school in school">
+                <img :src="school.cover" @click="goSchool(school.sid)" />
+                <p class="jonnerNum" v-text="school.sid" @click="goSchool(school.sid)"></p>
+                <p class="school" v-text="school.title" @click="goSchool(school.sid)"></p>
+                <p class="point" @click="goSchool(school.sid)">{{school.votes}}票</p>
+                <button  @click="voteSchool(school.sid,$index)">投票</button>
+            </li>
+        </ul>
+        <div class="index_loading_flag"></div>
+    </div>
+    <!--投票提示-->
+    <div class="modal fade" id="tips">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--二维码-->
+                <div class="two">
+                    <span class="sClose">
+                    </span>
+                    <img src="common/images/two.png">
+                    <p>长按扫我关注参与投票</p>
+                </div>
+                <!--成功-->
+                <div class="success">
+                    <p>投票成功</p>
+                </div>
+                <!--false-->
+                <div class="error" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--关注提示-->
+    <div class="modal fade" id="Followtips">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                提示提示提示提示提示提示提示
+            </div>
+        </div>
+    </div>
+
+    <footer class="indexFoot">
+        <div><a href="list.html">排名</a></div>
+        <div  @click="follow(this)" class="footer_Follow" data-client="wechat">关注我</div>
+        <!--<div>天平基金</div>-->
+    </footer>
+</div>
+</body>
+<script src="bower_components/requirejs/require.js" data-main="common/js/index"></script>
+</html>

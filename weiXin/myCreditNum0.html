@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>我的PU</title>
+    <!--<link href="bower_components/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body style="height: 100%;background-color: #EFF1F8;">
+<!--头部说明-->
+<div class="w-head">
+	<img src="img/back.png" class="w-back" onclick="history.back(-1)">
+	<span>学分详情</span>
+	<a href="#" class="w-share"><img src="img/shuo.png"></a>
+	<a href="#" class="w-home"><img src="img/home.png"></a>
+</div>
+<div>
+    <header class="credit-header">
+		<div class="L-score-more">
+				<div>
+					<div class="null-circle-container">
+					
+					</div>
+					
+					<p class="L-score-more-all" >可得<span id="L-score-more-all">120.00</span></p>
+					<p class="L-score-null-can" id="L-score-null-can">0.00</p>
+					<p class="L-score-more-status"><span>暂无学分</span></p>
+				</div>
+		</div>
+		<!--</div>-->
+		<p class="credit-detaile-college">江南大学设计学院</p>
+		<p class="credit-detaile-term">00届&nbsp;&nbsp;第三学期</p>
+    </header>
+    <div class="L-credit-num0">
+    	<img src="img/noScoreBg.png" />
+    	<p>还没有学分哦，参加活动得学分~</p>
+    </div>
+</div>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/circle-progress.js"></script>
+<script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
+<script>
+	//已得
+    var circle = new ProgressBar.Circle('.null-circle-container', {
+        color: '#ddd',
+        strokeWidth: 3,
+        trailWidth:6,
+        fill: '#eff1f8',
+        duration: 500,
+        easing: '',
+        trailColor: "#ddd"
+    });
+//	circle.animate(limit, function() {
+// })
+</script>
+</html>

@@ -1,0 +1,205 @@
+<!--
+Created by lisha on 16/12/8.
+describe : PU专题活动
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>PU专题活动</title>
+</head>
+<body>
+
+<div class="swiper-container swiper-container1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><img src="img/bg.png"></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/bg.png"></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/bg.png"></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/bg.png"></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/bg.png"></a></div>
+    </div>
+  	<!-- 如果需要分页器 -->
+	<div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper -->
+<div class="swiper-container swiper-container2">
+	<p>全省活动</p>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季美食狂</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+        <div class="swiper-slide"><a href=""><img src="img/img5.jpg"><p>美食狂欢季</p></a></div>
+    </div>
+    <!-- Add Pagination -->
+<!--    <div class="swiper-pagination"></div>-->
+</div>
+
+<div class="L-schoolActivity">
+	<p>全校活动</p>
+	<ul>
+		<li>
+			<a href="#">
+				<div class="L-activitiesDetail">
+					<div>
+						<p>世界最高楼将洗牌：迪拜斥十亿金欲再夺宝</p>
+						<p><span class="L-vote">投票</span><span class="L-ending">已结束</span><span class="L-vote">创新创意</span></p>
+						<p><img src="img/time.png" width="12px"/>&nbsp;2015.12.12-2015.12.31</p>
+						<p><img src="img/dw.png" width="9px"/>&nbsp;口袋大学青年社</p>
+					</div>
+
+					<img src="img/img5.jpg" />
+				</div>
+			</a>
+
+		</li>
+		<li>
+			<a href="#">
+				<div class="L-activitiesDetail">
+					<div>
+						<p>世界最高楼将洗牌：迪拜斥十亿金欲再夺宝迪拜斥十亿金欲再夺宝</p>
+						<p><span class="L-vote">投票</span><span class="L-ending">已结束</span><span class="L-vote">创新创意</span></p>
+						<p><img src="img/time.png" width="12px"/>&nbsp;2015.12.12-2015.12.31</p>
+						<p><img src="img/dw.png" width="9px"/>&nbsp;口袋大学青年社</p>
+					</div>
+					<img src="img/img5.jpg" />
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="L-activitiesDetail">
+					<div>
+						<p>世界最高楼将洗牌：迪拜斥十亿金欲再夺宝</p>
+						<p><img src="img/time.png" width="12px"/>&nbsp;2015.12.12-2015.12.31</p>
+						<p><img src="img/dw.png" width="9px"/>&nbsp;口袋大学青年社</p>
+					</div>
+					<img src="img/img5.jpg" />
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<!--活动为空时-->
+    <div class="L-activity-no">
+    	<img src="img/noActivity.png" />
+    	<p>暂无活动</p>
+    </div>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap.min.js"></script>
+<script src="js/swiper-3.3.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script>        
+  window.onload=function(){
+  	var mySwiper = new Swiper ('.swiper-container1', {
+	    direction: 'horizontal',
+	    loop: true,
+	    autoplay:3000,
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	  
+	  }); 
+	  
+	 var swiper = new Swiper('.swiper-container2', {
+        paginationClickable: true,
+        slidesPerView: 5,
+        spaceBetween: 50,
+        breakpoints: {
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            320: {
+                slidesPerView: 2.5,
+                spaceBetween: 10
+            }
+        }
+    });
+    
+    //load
+	var page=1;
+	var loadingStr = '<div class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
+	var noneStr = '<div class="nonestr">没有记录</div>';
+	var loadingShow = false;
+	var html = $(".L-schoolActivity ul").html();
+	$(function () {
+		getdata();
+	});
+	
+	function getdata(){
+		if (!loadingShow) {
+			$(".L-schoolActivity ul").append(loadingStr);
+			loadingShow = true;
+			getAjaxNews();
+		}
+	
+	}
+		
+	$(window).scroll(function(){
+		var document = window.document;
+		var top = document.body.scrollTop || document.documentElement.scrollTop
+				|| 0;
+		top += document.documentElement.clientHeight;
+		var height = document.documentElement.scrollHeight;
+		if (height - top < 1000) {
+			if (!loadingShow) {
+				$(".L-schoolActivity ul").append(loadingStr);
+				loadingShow = true;
+				getAjaxNews();
+			}
+		}
+	});
+	
+	function getAjaxNews() {
+			$.ajax({
+				url: "#",
+				//type: 'get',
+				data: {
+					page: page
+				},
+				error: function () {
+				},
+				success: function (data) {
+					//if (data!='0') {
+						$(".spinner").hide();
+					    $(".L-schoolActivity ul").append(html);
+					//	$(".square_comment_list").append(data);
+						$(".spinner").remove();
+						page++;
+						loadingShow = false;
+					//} else {
+					//	$(".spinner").hide();
+					//	$(".square_comment_list").append(noneStr);
+					//	$(".spinner").remove();
+					//}
+				}
+			});
+	}
+
+  }
+	
+  </script>
+</html>

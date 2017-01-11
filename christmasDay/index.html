@@ -1,0 +1,69 @@
+<!--
+Created by lisha on 16/11/30.
+describe : 玛丽玛丽轰 首页
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>玛丽玛丽轰</title>
+</head>
+<body class="L-spirit-index" style="height:100%;">
+
+<!--<div class="L-spirit-index-article1">恭喜<span>***</span>&nbsp;&nbsp;(学校)&nbsp;&nbsp;<span>***</span>&nbsp;&nbsp;(姓名)&nbsp;&nbsp;获得<span>***</span>奖品</div>-->
+<header>
+		<img src="img/indexBg.png" style="width: 100%;" />
+		<img src="img/mamalihong1.png" />
+</header>
+<div class="swiper-container swiper-index">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="L-spirit-index-article1">恭喜<span>苏州大学苏州大学苏州大学苏州大学</span>&nbsp;&nbsp;<span>钱钱钱</span>获得<span>100元PU币100元PU币</span></div></div>
+		<div class="swiper-slide"><div class="L-spirit-index-article1">恭喜<span>苏州大学</span>&nbsp;&nbsp;<span>钱钱钱</span>获得<span>100元PU币</span></div></div>
+        <div class="swiper-slide"><div class="L-spirit-index-article1">恭喜<span>苏州大学</span>&nbsp;&nbsp;<span>钱钱钱</span>获得<span>100元PU币</span></div></div>
+    </div>
+  	<!-- 如果需要分页器 -->
+	<!--<div class="swiper-pagination"></div>-->
+</div>
+
+<p class="L-spirit-index-article2">我的抽奖券：&nbsp;&nbsp;<span>0</span>张&nbsp;&nbsp;<a href="PUrecharge.html">获取抽奖券></a></p>
+
+<a class="L-spirit-index-join" href="draw.html">
+    <img class="go-join-btn" src="img/goCanjia.png">
+</a>
+
+<div class="L-footer-div">
+	<a class="L-spirit-footer" href="rule.html" style="color: RGB(220,197,161);text-decoration: underline;">活动规则</a>
+	<a class="L-spirit-footer2" href="share.html" style="color: RGB(220,197,161);text-decoration: underline;">分享我的邀请码</a>
+</div>
+
+<div class="L-merry-footer">
+	<span>输入邀请码</span>&nbsp;&nbsp;
+	<input type="text" />&nbsp;&nbsp;
+	<img class="L-merry-submit" src="img/submit.png" />
+</div>
+<p class="L-merry-footer2">友情提示：填写他人邀请码，双方将各自额外获得一张免费抽奖券！</p>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+<script>        
+  window.onload=function(){
+  	var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'horizontal',
+	    loop: true,
+	    autoplay:3000,
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	  
+	  }); 
+  }
+  </script>
+</html>

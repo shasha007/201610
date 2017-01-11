@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>培训专栏</title>
+    <link href="css/style.css?v=001" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+
+<body>
+	    <!--搜索-->
+    <header class="L-search-header">
+    	<div class="L-search">
+	        <p class="h_index_input">
+	            <input id="searchInput" placeholder="请输入搜索内容">
+	        </p>
+	        <p class="h_index_btn">
+	            <button>搜索</button>
+	        </p>
+	    </div>
+    </header>
+    <!--搜索项目-->
+    <div class="L-search-recorde">
+    	<span class="search-label"><a>互联网互联网</a></span>
+    	<span class="search-label"><a>财经类</a></span>
+    	<span class="search-label"><a>教育类</a></span>
+    	<span class="search-label"><a>认证类互联网</a></span>
+    	<span class="search-label"><a>人文</a></span>
+    	<span class="search-label"><a>语言类</a></span>
+    	<span class="search-label"><a>方法类</a></span>
+    	<span class="search-label"><a>人文类</a></span>
+    	<span class="search-label"><a>语言类</a></span>
+    	<span class="search-label"><a>方法类</a></span>
+    </div>
+    <!--banner-->
+	<div class="L-index-banner">
+		<img src="img/bg.png" />
+	</div>
+	<div class="L-index">
+		<div class="L-index-footBar">
+		    <!--给添加class表选中的状态-->
+			<a href="#">
+		        <p><img src="img/goTeat.png" />&nbsp;我的课程</p></a>
+		
+		    <a href="puConsult.html">
+		        <p><img src="img/PUagency.png" />&nbsp;PU咨询</p></a>
+		        
+		</div>
+		<a href="#">
+			<section class="L-index-course01">
+			<img src="img/course011.png" />
+			<p class="L-news-title">工信部认证</p>
+			<p class="L-news-index">新增运营经理证书</p>
+			<div>
+				工业和信息化部电信设备认证中心[1]的前身是1998年12月成立的原电信设备进网（小西天）受理中心和先
+			</div>
+			<div>
+				<p class="L-left-people"><img src="img/peaple.png" />&nbsp;&nbsp;210人</p>
+				<p class="L-right-new"><img src="img/newss.png" />&nbsp;&nbsp;新动态</p>
+			</div>
+			</section>
+		</a>
+		<a href="#">
+			<section class="L-index-course01">
+			<img src="img/course022.png" />
+			<p class="L-news-title">原型课堂</p>
+			<p class="L-news-index">第五讲上线啦！</p>
+			<div>
+				工业和信息化部电信设备认证中心[1]的前身是1998年12月成立的原电信设备进网（小西天）受理中心和先工业和信息化部电信设备认证中心
+				工业和信息化部电信设备认证中心[1]的前身是1998年12月成立的原电信设备进网（小西天）受理中心和先工业和信息化部电信设备认证中心
+			</div>
+			<div>
+				<p class="L-left-people"><img src="img/peaple.png" />&nbsp;&nbsp;61120人</p>
+				<p class="L-right-new"><img src="img/newss.png" />&nbsp;&nbsp;新动态</p>
+			</div>
+			</section>
+		</a>
+		<a href="#">
+			<section class="L-index-course01">
+			<img src="img/course033.png" />
+			<p class="L-news-title">铅笔微课</p>
+			<p class="L-news-index">第五讲上线啦！</p>
+			<!--<p class="L-news-index">第五讲上线啦！</p>-->
+			<div>
+				工业和信息化部电信设备认证中心[1]的前身是1998年12月成立的原电信设备进网（小西天）受理中心和先
+			</div>
+			<div>
+				<p class="L-left-people"><img src="img/peaple.png" />&nbsp;&nbsp;61120人</p>
+			</div>
+			</section>
+		</a>
+		<div class="L-back-cover" id="L-back-cover"></div>
+	</div>
+
+</body>
+</html>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+	 $('#searchInput').bind('click input propertychange', function() {
+	 	$('.L-index-banner').hide();
+	 	$('.L-search-recorde').show();
+//	 	$('.L-index-footBar').addClass('L-back-cover');
+//	 	$('.L-index-course01').addClass('L-back-cover');
+	 	$('.L-back-cover').show();
+        var inputValue = $(this).val().trim();
+        if (inputValue == '') {
+
+
+        } else {
+
+
+        }
+    });
+	var mask=document.getElementById("L-back-cover");
+	mask.addEventListener("click",slideUp);
+	function slideUp(e){
+		if(e.target.getAttribute("id")==="L-back-cover"){
+			$('.L-back-cover').hide();
+		}
+	}
+</script>
+

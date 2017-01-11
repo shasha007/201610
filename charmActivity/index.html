@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>魅力活动投票</title>
+    <link href="public/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+<style>
+    html {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    body {
+    	background-color: #FFFFFF;
+        max-width: 940px !important;
+    }
+    .h-wen-div {
+        padding: 5px 5px 20px;
+        background: #fff;
+        border-radius: 5px;
+        /*border: 1px solid #f7f7f7;*/
+    }
+
+    @media screen and (max-width: 500px) {
+        @media screen and (max-width: 370px) {
+            .h-wen-li > div {
+                font-size: 12px;
+            }
+        }
+        @media screen and (min-width: 371px)  and (max-width: 500px) {
+            .h-wen-li > div {
+                font-size: 14px;
+            }
+        }
+        header {
+			width: 100%;
+    		text-align: center;
+        }
+        .h-wen-li {
+            width: 47%;
+            float: left;
+            margin-top: 3%;
+            /*border: 1px solid #f7f7f7;*/
+        }
+
+        .h-wen-div li:nth-child(even) {
+            margin-right: 6%;
+        }
+        .h-wen-div li:nth-child(ood) {
+            margin-right: 6%;
+        }
+        .h-wen-li > div {
+            /*width: 94%;*/
+            margin: 10px auto;
+            padding: 3px 0;
+            color: #4f5f6e;
+            line-height: 30px;
+            border-radius: 3px;
+        }
+        .h-wen-li > div > p {
+            height: 60px;
+            padding: 0 5px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+
+        .h-wen-cover {
+            width: 96%;
+            height: auto;
+            margin: 0px 2%;
+            padding: 0 5px 10px;
+            /*background: #f4f2f0;*/
+            border-radius: 10px;
+        }
+    }
+
+    @media screen and (min-width: 501px) {
+        .h-wen-li {
+            width: 24%;
+            float: left;
+            margin-top: 3%;
+            margin-right: 1.33%;
+            /*border: 1px solid #f7f7f7;*/
+        }
+
+        .h-wen-li > div {
+            width: 90%;
+            margin: 10px auto;
+            padding: 3px 0;
+            color: #4f5f6e;
+            font-size: 14px;
+            line-height: 30px;
+            border-radius: 3px;
+        }
+
+        .four {
+            margin-right: 0;
+        }
+        .h-wen-li > div > p {
+            height: 40px;
+            padding: 0 5px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+
+        .h-wen-cover {
+            width: 90%;
+            height: auto;
+            margin: 0px 5%;
+            padding: 0 15px 10px;
+            /*background: #f4f2f0;*/
+            border-radius: 10px;
+        }
+    }
+    .h-wen-cover > header {
+
+    }
+</style>
+<body class="">
+<header>
+    <img class="img-responsive" src="img/header.png" />
+</header>
+<div class="h-wen-cover clearfix">
+
+    <ul class="h-wen-div clearfix">
+        <img class="img-responsive" src="img/title1.png">
+        <li class="h-wen-li" onclick="goevent('209396')">
+            <img class="img-responsive" src="img/nav01.png">
+
+            <div>
+                <p>2016年度全省“魅力团支书”风采展示评选（综合大学组）</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('209403')">
+            <img class="img-responsive" src="img/nav02.png">
+
+            <div>
+                <p>2016年度全省“魅力团支书”风采展示评选（本科学院、市属高校组）</p>
+            </div>
+
+        </li>
+        <li class="h-wen-li" onclick="goevent('209406')">
+            <img class="img-responsive" src="img/nav03.png">
+
+            <div>
+                <p>2016年度全省“魅力团支书”风采展示评选（高职院校组）</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('209412')">
+            <img class="img-responsive" src="img/nav04.png">
+
+            <div>
+                <p>2016年度全省“魅力团支书”风采展示评选（民办高校、独立学院组）</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="h-wen-div clearfix">
+        <img class="img-responsive" src="img/title2.png">
+        <li class="h-wen-li clearfix" onclick="goevent('214518')">
+            <img class="img-responsive" src="img/nav05.png">
+
+            <div>
+                <p>2016年度全省“活力团支部”风采展示评选（综合大学组）</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('214520')">
+            <img class="img-responsive" src="img/nav06.png">
+
+            <div>
+                <p>2016年度全省“活力团支部”风采展示评选（本科学院、市属高校组）</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('214525')">
+            <img class="img-responsive" src="img/nav07.png">
+
+            <div>
+                <p>2016年度全省“活力团支部”风采展示评选（高职院校组）</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('214526')">
+            <img class="img-responsive" src="img/nav08.png">
+
+            <div>
+                <p>2016年度全省“活力团支部”风采展示评选（民办高校、独立学院组）</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+
+    function isphone() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    function goevent(id) {
+        if (isphone()) {
+            if (typeof(Android) == "undefined") {
+                window.location.href = "http://www.pocketuni.net/index.php?app=event&mod=Front&act=player&id=" + id;
+            } else {
+                Android.openInternalPage("event_popularity", "", "", id, "", "", "");
+            }
+        } else {
+            window.location.href = "http://www.pocketuni.net/index.php?app=event&mod=Front&act=player&id=" + id;
+        }
+
+    }
+</script>
+</body>
+</html>

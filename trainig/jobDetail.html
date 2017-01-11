@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	/>
+	<title>数据分析师</title>
+	<link href="css/style.css?v=001" rel="stylesheet">
+	<link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+
+<body>
+	<div class="hh-job-content">
+		<section class="L-certificate-introdution">
+			<p class="L-title-job">证书介绍</p>
+			<div>
+				<span class="mui-ellipsis-3" id="hh-show">数据数据数据数据数据分析师  是数据师Datication的一种，指的是不同行业中，专门从事行业数据搜集,整理，分析，并依据数据做出行业研究，评估和预测的专业人员。</span>
+			</div>
+			<a class="LMore">展开</a>
+		</section>
+		<section class="L-signIn-fee">
+			<span class="L-title-job">报名费用</span><span class="L-right-money"><i>￥1000.<i>09</i></i>&nbsp;&nbsp;<i>2000</i></span>
+		</section>
+		<section class="L-class-video">
+			<p><span>相关课程</span><span class="L-right-title"><i>更多</i>&nbsp;<img src="img/liuZuo.png" /></span></p>
+			<div class="hh-video">
+				<!--<video id="video1" width="100%" height="200px" src="../video/movie.mp4" controls="controls">
+					your browser does not support the video tag
+				</video>-->
+				<a href="#">
+					<img src="img/bg.png" alt="">
+				</a>
+				<p>第一节&nbsp;LVM逻辑基本概念</p>
+			</div>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/bg.png" alt="">
+					</a>
+					<p>第二节&nbsp;LVM逻辑基本概念</p>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/bg.png" alt="">
+					</a>
+					<p>第三节&nbsp;LVM逻辑基本概念LVM逻辑基本概念</p>
+				</li>				
+			</ul>
+		</section>
+		<section class="L-job-exam">
+			<span class="L-title-job">考试时间</span><span class="L-right-exam">2018-12-2500</span>
+		</section>
+		<section class="L-remark">
+			<p class="L-title-job">备注</p>
+			<div>
+				数据分析师 是数据师Datication的一种，指的是不同行业中，专门从事行业数据搜集,整理，分析，并依据数据做出行业研究，评估和预测的专业人员。
+			</div>
+		</section>
+	</div>
+	<div class="L-footBar">
+		<!--给添加class表选中的状态-->
+		<a href="#" class="barSelected">
+			<p>免费测试</p>
+		</a>
+
+		<a href="#">
+			<p>报名考试</p>
+		</a>
+
+	</div>
+</body>
+
+</html>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script>
+	// 按钮 展开 处理
+	var div = $('#hh-show')[0].innerText;
+	if (div.length > 77) {
+		$('.LMore').show()
+	}
+	else {
+		$('.LMore').hide();
+		$('.L-certificate-introdution div').css('padding-bottom', '7%');
+	}
+
+	$(function () {//显示三行 多余隐藏 点击展开收缩
+		$('.LMore').click(function () {
+			if ($('.L-certificate-introdution div').children(0).hasClass('mui-ellipsis-3')) {
+				$('.mui-ellipsis-3').removeClass('mui-ellipsis-3');
+				$('.LMore').text('收缩');
+			} else {
+				$('.L-certificate-introdution div').children(0).addClass('mui-ellipsis-3');
+				$('.LMore').text('展开');
+			}
+		});
+	});
+
+	// 按钮 更多 处理
+	var li = $('ul').children();
+	if (li.length > 2) {
+		$('.More').show()
+		$('ul li:gt(1)').hide();
+	}
+	else {
+		$('.More').hide();
+		$('.L-class-video ul').css('padding-bottom', '7%');
+	}
+
+	$(function () {
+		$('.More').click(function () {
+			if (li.length > 1 && li.length < 10) {
+				$('ul li').show()
+			}
+			else {
+				$('ul li:lt(10)').show();
+				$('ul li:gt(10)').hide();
+			}
+		})
+	})
+
+</script>

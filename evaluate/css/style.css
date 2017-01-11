@@ -1,0 +1,60 @@
+.contend01{
+	background: url(../img/back.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 6%;
+	color: #fff;
+}
+.contend01 p{
+	line-height: 40px;
+}
+.contend02{
+	padding: 0 6%;
+	background-color: RGB(0,14,17);
+	color: #fff;
+	font-size: 14px;
+}
+.contend02 >div{
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+}
+.contend02 img{
+	padding-top: 5%;
+	width: 95%;
+}
+.text-left{
+	line-height: 30px;
+	padding-bottom: 5%;
+}
+.contend03{
+	padding: 6%;
+	background-color: RGB(0,14,17);
+	color: RGB(28,89,95);
+	font-size: 14px;
+	line-height: 30px;
+}
+.contend03>div{
+	font-size: 16px;
+}
+footer{
+	padding: 0 6% 6% 6%;
+	background-color: RGB(0,14,17);
+	color: #fff;
+	font-size: 12px;
+	margin-top: -18%;
+	overflow: hidden;
+}
+footer span{
+	display: block;
+	float: left;
+	margin-top: 20%;
+}
+footer div{
+	float: left;
+	width: 40%;
+	margin-top: 20%;
+}
+footer img{
+	float: right;
+	width: 30%;
+}
+

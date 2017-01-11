@@ -1,0 +1,210 @@
+{
+  "data": {
+    "title": "元宵节问答",
+    "qusetion": [
+      {
+        "id": "10",
+        "title": "1+1+2=0，1+3+5=0,2+3+6=1,3+6+9=2....",
+        "options": [
+          {"content":"与对岸青年交流美食文化3"},
+          {"content":"与对岸青年交流美食文化5"},
+          {"content":"4与对岸青年交流美食文化"},
+          {"content":"9与对岸青年交流美食文化"}
+        ]
+      },
+      {
+        "id": "3",
+        "title": "2016年初根据“台独”事件，帝吧FB出征，是为了？",
+        "options": [
+          {"content":"与对岸青年交流美食文化3","url":"img/img5.jpg"},
+          {"content":"与对岸青年交流美食文化5","url":"img/img5.jpg"},
+          {"content":"4与对岸青年交流美食文化","url":"img/img5.jpg"},
+          {"content":"9与对岸青年交流美食文化","url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "2",
+        "title": "元宵节的别称不是哪个？",
+        "options": [
+          {"content":"21"},
+          {"content":"33"},
+          {"content":"334"},
+          {"content":"55"}
+        ]
+      },
+      {
+        "id": "9",
+        "title": "门前大桥下，游过一群鸭，快来快来数一数，（ ？ ）",
+        "options": [
+          {"url":"img/img5.jpg"},
+          {"url":"img/img5.jpg"},
+          {"url":"img/img5.jpg"},
+          {"url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "4",
+        "title": "下面是春晚分会场之一的是？",
+        "options": [
+          {"content":"广西"},
+          {"content":"呼和浩特"},
+          {"content":"山东"},
+          {"content":"上海"}
+        ]
+      },
+      {
+        "id": "6",
+        "title": "在网红改编的“你怎么不上天”的古诗词中，“扶摇直上九万里”的前一句是什",
+        "options": [
+          {"url":"img/img5.jpg"},
+          {"url":"img/img5.jpg"},
+          {"url":"img/img5.jpg"},
+          {"url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "5",
+        "title": "麒麟到北极会变成什么？",
+        "options": [
+          {"content":"冰雕"},
+          {"content":"麒麟"},
+          {"content":"灯笼"},
+          {"content":"上海"}
+        ]
+      },
+      {
+        "id": "1",
+        "title": "猴年吉祥物“康康”被称为？",
+        "options": [
+          {"content":"与对岸青年交流美食文化3","url":"img/img5.jpg"},
+          {"content":"与对岸青年交流美食文化5","url":"img/img5.jpg"},
+          {"content":"4与对岸青年交流美食文化","url":"img/img5.jpg"},
+          {"content":"9与对岸青年交流美食文化","url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "8",
+        "title": "26个英文字母，从A到Z，其中E和T走了，还剩下几个英文字母？",
+        "options": [
+          {"content":"与对岸青年交流美食文化3","url":"img/img5.jpg"},
+          {"content":"与对岸青年交流美食文化5","url":"img/img5.jpg"},
+          {"content":"4与对岸青年交流美食文化","url":"img/img5.jpg"},
+          {"content":"9与对岸青年交流美食文化","url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "8",
+        "title": "26个英文字母，从A到Z，其中E和T走了，还剩下几个英文字母？",
+        "options": [
+          {"content":"与对岸青年交流美食文化3","url":"img/img5.jpg"},
+          {"content":"与对岸青年交流美食文化5","url":"img/img5.jpg"},
+          {"content":"4与对岸青年交流美食文化","url":"img/img5.jpg"},
+          {"content":"9与对岸青年交流美食文化","url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "8",
+        "title": "26个英文字母，从A到Z，其中E和T走了，还剩下几个英文字母？",
+        "options": [
+          {"content":"与对岸青年交流美食文化3","url":"img/img5.jpg"},
+          {"content":"与对岸青年交流美食文化5","url":"img/img5.jpg"},
+          {"content":"4与对岸青年交流美食文化","url":"img/img5.jpg"},
+          {"content":"9与对岸青年交流美食文化","url":"img/img5.jpg"}
+        ]
+      },
+      {
+        "id": "8",
+        "title": "26个英文字母，从A到Z，其中E和T走了，还剩下几个英文字母？",
+        "options": [
+          {"content":"冰雕"},
+          {"content":"麒麟"},
+          {"content":"灯笼"},
+          {"content":"上海"}
+        ]
+      },
+      {
+        "id": "8",
+        "title": "26个英文字母，从A到Z，其中E和T走了，还剩下几个英文字母？",
+        "options": [
+          "22",
+          "21",
+          "20",
+          "23"
+        ]
+      },
+      {
+        "id": "8",
+        "title": "26个英文字母，从A到Z，其中E和T走了，还剩下几个英文字母？",
+        "options": [
+          {"content":"冰雕"},
+          {"content":"麒麟"},
+          {"content":"灯笼"},
+          {"content":"上海"}
+        ]
+      },
+      {
+        "id": "10",
+        "title": "1+1+2=0，1+3+5=0,2+3+6=1,3+6+9=2....",
+        "options": [
+          "13",
+          "5",
+          "25",
+          "6"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "2016年初根据“台独”事件，帝吧FB出征，是为了？",
+        "options": [
+          {"content":"冰雕"},
+          {"content":"麒麟"},
+          {"content":"灯笼"},
+          {"content":"上海"}
+        ]
+      },
+      {
+        "id": "2",
+        "title": "元宵节的别称不是哪个？",
+        "options": [
+          "上元节",
+          "小正月",
+          "春灯节",
+          "元月节"
+        ]
+      },
+      {
+        "id": "9",
+        "title": "门前大桥下，游过一群鸭，快来快来数一数，（ ？ ）",
+        "options": [
+          {"content":"冰雕"},
+          {"content":"麒麟"},
+          {"content":"灯笼"},
+          {"content":"上海"}
+        ]
+      },
+      {
+        "id": "4",
+        "title": "下面是春晚分会场之一的是？",
+        "options": [
+          "广西",
+          "福州",
+          "广州",
+          "呼和浩特"
+        ]
+      },
+      {
+        "id": "6",
+        "title": "在网红改编的“你怎么不上天”的古诗词中，“扶摇直上九万里”的前一句是什",
+        "options": [
+          {"content":"冰雕"},
+          {"content":"麒麟"},
+          {"content":"灯笼"},
+          {"content":"上海"}
+        ]
+      }
+    ]
+  },
+  "status": 1,
+  "leftTimes": 3,
+  "msg": "问题已经开始"
+}

@@ -1,0 +1,65 @@
+<!--
+Created by lisha on 16/11/16
+describe : “我的青春我做主”全国大学生才艺大赛
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/reset.min.css" rel="stylesheet">
+    <link href="common/css/style.css" rel="stylesheet">
+    <title>“我的青春我做主”全国大学生才艺大赛</title>
+</head>
+<body>
+<div id="beautiful">
+   
+    <!--搜索-->
+    <header>
+    	<div class="L-search">
+	        <p class="h_index_input">
+	            <input id="searchInput" @focus="getFocus"   @keyup.enter="SearchEnter" placeholder="请输入编号或姓名" v-model="inputValue">
+	        </p>
+	        <p class="h_index_clear" @click="clear">
+	            <span></span>
+	        </p>
+	        <p class="h_index_btn">
+	            <button @click="SearchEnter">搜索</button>
+	        </p>
+	    </div>
+    </header>
+
+    
+    <div class="indexSchool" v-if="!isSearch&&!Searched" transition="expand">
+        <ul class="indexUl clearfix">
+            <li v-for="school in school">
+                <img :src="school.cover" @click="goSchool(school.sid)" />
+                <p class="jonnerNum" v-text="school.sid" @click="goSchool(school.sid)"></p>
+                <p class="school" v-text="school.title" @click="goSchool(school.sid)"></p>
+                <p class="point" @click="goSchool(school.sid)">{{school.votes}}票</p>
+                <button  @click="voteSchool(school.sid,$index)">投票</button>
+            </li>
+        </ul>
+        <div class="index_loading_flag"></div>
+    </div>
+  
+    <!--搜索为空-->
+    <div class="Empty" v-if="isEmpty" transition="expand" v-cloak>
+        <img src="common/images/none.png">
+    </div>
+    
+</div>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/vue/dist/vue.js"></script>
+<!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<!--<script src="common/js/public.js"></script>-->
+<!--<script scc="common/js/index"></script>-->
+<script src="bower_components/requirejs/require.js" data-main="common/js/index"></script>
+</html>

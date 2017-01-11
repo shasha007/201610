@@ -1,0 +1,63 @@
+<!--
+Created by huqiwen on 16/9/7
+describe : 最美校园
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/reset.min.css" rel="stylesheet">
+    <link href="common/css/style.css" rel="stylesheet">
+    <title>大学主页</title>
+</head>
+<body>
+<div id="school">
+    <img src="common/images/index_1.png">
+    <p class="L-join-detail"><span class="">陈小二</span>，<span>160</span>号</p>
+    <p class="point">已获票数&emsp13;:&emsp13;8888</p>
+    <p class="tit">参赛宣言</p>
+    <p class="con">“野芳发而幽香，佳木秀而繁阴”，郁郁葱葱的繁花丛中，绿树成荫的林间小道上，柳叶的光影斑驳闪烁，纯洁可爱的白鹭在茵茵草地上欢快地跳跃，风华正茂的莘莘学子结伴而行，身后留下一串串风铃般的欢声笑语。</p>
+    <p class="tit video">视频</p>
+    <video id="video1" width="100%" style="padding: 0 15px;" src="../video/movie.mp4" controls="controls">
+				your browser does not support the video tag
+	</video>
+    <p class="tit photo">更多美照</p>
+    <ul class="photoUl">
+        <li><img src="common/images/indexBanner.png"></li>
+        <li><img src="common/images/indexBanner.png"></li>
+        <li><img src="common/images/indexBanner.png"></li>
+    </ul>
+    <button class="vote" @click="voteSchool(school.sid)" >投票</button>
+    <div class="modal fade" id="tips">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--二维码-->
+                <div class="two">
+                    <span class="sClose">
+                    </span>
+                    <img src="common/images/two.png">
+                    <p>长按扫我关注参与投票</p>
+                </div>
+                <!--成功-->
+                <div class="success">
+                    <p>投票成功</p>
+                </div>
+                <!--false-->
+                <div class="error" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+<script src="bower_components/requirejs/require.js" data-main="common/js/school"></script>
+</html>

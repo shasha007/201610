@@ -1,0 +1,58 @@
+<!--
+Created by lisha on 16/11/4.
+describe : 众灵狂欢日 首页
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>众灵狂欢日</title>
+</head>
+<body class="L-spirit-index" style="height:100%;">
+
+<!--<div class="L-spirit-index-article1">恭喜<span>***</span>&nbsp;&nbsp;(学校)&nbsp;&nbsp;<span>***</span>&nbsp;&nbsp;(姓名)&nbsp;&nbsp;获得<span>***</span>奖品</div>-->
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="L-spirit-index-article1">恭喜<span>***</span>&nbsp;&nbsp;(学校)&nbsp;&nbsp;<span>***</span>&nbsp;&nbsp;(姓名)&nbsp;&nbsp;获得<span>***</span>奖品</div></div>
+        <div class="swiper-slide"><div class="L-spirit-index-article1">恭喜<span>***</span>&nbsp;&nbsp;(学校)&nbsp;&nbsp;<span>***</span>&nbsp;&nbsp;(姓名)&nbsp;&nbsp;获得<span>***</span>奖品</div></div>
+        <div class="swiper-slide"><div class="L-spirit-index-article1">恭喜<span>***</span>&nbsp;&nbsp;(学校)&nbsp;&nbsp;<span>***</span>&nbsp;&nbsp;(姓名)&nbsp;&nbsp;获得<span>***</span>奖品</div></div>
+        
+    </div>
+  	<!-- 如果需要分页器 -->
+	<!--<div class="swiper-pagination"></div>-->
+</div>
+
+<p class="L-spirit-index-article2">我的符咒：<span>0</span>张&nbsp;<a href="PUrecharge.html">获取符咒></a></p>
+
+<a class="L-spirit-index-join" href="draw.html">
+    <img class="go-join-btn" src="img/goCanjia.png">
+</a>
+
+<a class="L-spirit-footer" href="rule.html" style="color: #9b9ca1;"><活动规则点击查看></a>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+<script>        
+  window.onload=function(){
+  	var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'horizontal',
+	    loop: true,
+	    autoplay:3000,
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	  
+	  }); 
+  }
+  </script>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>我的PU</title>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+</head>
+<body>
+<!--头部说明-->
+<div class="w-head">
+	<img src="img/back.png" class="w-back" onclick="history.back(-1)">
+	<span>学分详情</span>
+	<a href="#" class="w-share"><img src="img/shuo.png"></a>
+	<a href="#" class="w-home"><img src="img/home.png"></a>
+</div>
+<div>
+    <header class="credit-detaile-header">
+		<!--<div class="w-detaile-circle">-->
+			<div class="L-score-more">
+				<div>
+					<div class="more-circle-container">
+					
+					</div>
+					
+					<p class="L-score-more-all" >可得<span id="L-score-more-all">120.00</span></p>
+					<p class="L-score-more-can" id="L-score-more-can">180.00</p>
+					<p class="L-score-more-status"><span>溢出60分</span></p>
+				</div>
+			</div>
+		<!--</div>-->
+		<p class="credit-detaile-college">江南大学设计学院</p>
+		<p class="credit-detaile-term">00届&nbsp;&nbsp;第三学期</p>
+    </header>
+    <div class="credit-list">
+        <ul>
+            <li class="to-event" data-eventid="">
+            	<div>
+            		<div class="credit-pic pull-left">
+                       <img class="img-responsive" src="img/testimg.jpg">
+                    </div>
+                    <div class="credit-school pull-right">
+                        <p>大学生艺术节比赛活动大学生艺术节比赛活动大学生艺术节比赛活动</p>
+                        <p>2015-09-28至2015-09-28</p>
+                    </div>
+            	</div>
+
+                    <div class="credit-event-point pull-left">
+                        <p class="credit-event-signed"><span>5</span>学分</p>
+                    </div>
+                    <div class="credit-event-status pull-right">
+                        <p class="credit-event-signed">待&nbsp;<span>陈国华</span>&nbsp;老师审核</p>
+                    </div>
+            </li>
+            <li class="to-event" data-eventid="">
+            	<div>
+            		<div class="credit-pic pull-left">
+                       <img class="img-responsive" src="img/testimg.jpg">
+                    </div>
+                    <div class="credit-school pull-right">
+                        <p>大学生艺术节比赛活动大学生艺术节比赛活动大学生艺术节比赛活动</p>
+                        <p>2015-09-28至2015-09-28</p>
+                    </div>
+            	</div>
+
+                    <div class="credit-event-point pull-left">
+                        <p class="credit-event-signed"><span>5</span>学分</p>
+                    </div>
+                    <div class="credit-event-status pull-right">
+                        <p class="credit-event-signed">已获得</p>
+                    </div>
+            </li>
+                        <li class="to-event" data-eventid="">
+            	<div>
+            		<div class="credit-pic pull-left">
+                       <img class="img-responsive" src="img/testimg.jpg">
+                    </div>
+                    <div class="credit-school pull-right">
+                        <p>大学生艺术节比赛活动大学生艺术节比赛活动大学生艺术节比赛活动</p>
+                        <p>2015-09-28至2015-09-28</p>
+                    </div>
+            	</div>
+
+                    <div class="credit-event-point pull-left">
+                        <p class="credit-event-signed"><span>5</span>学分</p>
+                    </div>
+                    <div class="credit-event-status pull-right">
+                        <p class="credit-event-signed">已获得</p>
+                    </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/load.js"></script>
+<script src="bower_components/circle-progress.js"></script>
+<script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
+<script>
+    var circle = new ProgressBar.Circle('.more-circle-container', {
+        color: '#f0411f',
+        strokeWidth: 3,
+        trailWidth:3,
+        fill: '#eff1f8',
+        duration: 500,
+        easing: '',
+        trailColor: "#e2e2e2"
+    });
+	circle.animate(1, function() {
+   })
+</script>
+</html>

@@ -1,0 +1,139 @@
+<!--
+Created by lisha on 16/12/9.
+describe : 我的活动
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>我的PU</title>
+</head>
+<body>
+<!--头部说明-->
+<div class="w-head">
+	<img src="img/back.png" class="w-back" onclick="history.back(-1)">
+	<span>我的活动</span>
+	<a href="#" class="w-home"><img src="img/home.png" ></a>
+</div>
+
+<div class="L-schoolActivity L-my-schoolActivity">
+	<ul>
+		<li>
+			<a href="#">
+				<div class="L-activitiesDetail">
+					<div>
+						<p>世界最高楼将洗牌：迪拜斥十亿金欲再夺宝</p>
+						<p><span class="L-vote">投票</span><span class="L-ending">已结束</span></p>
+						<p><img src="img/time.png" width="12px"/>&nbsp;2015.12.12-2015.12.31</p>
+						<p><img src="img/dw.png" width="9px"/>&nbsp;口袋大学青年社</p>
+					</div>
+
+					<img src="img/img5.jpg" />
+				</div>
+			</a>
+
+		</li>
+		<li>
+			<a href="#">
+				<div class="L-activitiesDetail">
+					<div>
+						<p>世界最高楼将洗牌：迪拜斥十亿金欲再夺宝</p>
+						<p><span class="L-ending">已结束</span></p>
+						<p><img src="img/time.png" width="12px"/>&nbsp;2015.12.12-2015.12.31</p>
+						<p><img src="img/dw.png" width="9px"/>&nbsp;口袋大学青年社</p>
+					</div>
+					<img src="img/img5.jpg" />
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="L-activitiesDetail">
+					<div>
+						<p>世界最高楼将洗牌：迪拜斥十亿金欲再夺宝</p>
+						<p><span class="L-vote">投票</span><span class="L-vote">创新创意</span></p>
+						<p><img src="img/time.png" width="12px"/>&nbsp;2015.12.12-2015.12.31</p>
+						<p><img src="img/dw.png" width="9px"/>&nbsp;口袋大学青年社</p>
+					</div>
+					<img src="img/img5.jpg" />
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<!--活动为空时-->
+    <div class="L-activity-no">
+    	<img src="img/noActivity.png" />
+    	<p>暂无活动</p>
+    </div>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+	var page=1;
+	var loadingStr = '<div class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
+	var noneStr = '<div class="nonestr">没有记录</div>';
+	var loadingShow = false;
+	var html = $(".L-schoolActivity ul").html();
+	$(function () {
+		getdata();
+	});
+	
+	function getdata(){
+		if (!loadingShow) {
+			$(".L-schoolActivity ul").append(loadingStr);
+			loadingShow = true;
+			getAjaxNews();
+		}
+	
+	}
+		
+	$(window).scroll(function(){
+		var document = window.document;
+		var top = document.body.scrollTop || document.documentElement.scrollTop
+				|| 0;
+		top += document.documentElement.clientHeight;
+		var height = document.documentElement.scrollHeight;
+		if (height - top < 1000) {
+			if (!loadingShow) {
+				$(".L-schoolActivity ul").append(loadingStr);
+				loadingShow = true;
+				getAjaxNews();
+			}
+		}
+	});
+	
+	function getAjaxNews() {
+			$.ajax({
+				url: "#",
+				//type: 'get',
+				data: {
+					page: page
+				},
+				error: function () {
+				},
+				success: function (data) {
+					//if (data!='0') {
+						$(".spinner").hide();
+					    $(".L-schoolActivity ul").append(html);
+					//	$(".square_comment_list").append(data);
+						$(".spinner").remove();
+						page++;
+						loadingShow = false;
+					//} else {
+					//	$(".spinner").hide();
+					//	$(".square_comment_list").append(noneStr);
+					//	$(".spinner").remove();
+					//}
+				}
+			});
+	}
+
+</script>
+</html>

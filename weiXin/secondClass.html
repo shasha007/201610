@@ -1,0 +1,166 @@
+<!--
+Created by lisha on 16/12/8. 第二课堂
+describe : 
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>我的PU</title>
+</head>
+<body style="background: #f3f1ee">
+<!--头部说明-->
+<div class="w-head">
+	<img src="img/back.png" class="w-back" onclick="history.back(-1)">
+	<span>素质教育报告单</span>
+	<a href="#" class="w-home"><img src="img/home.png"></a>
+</div>
+<div id="Extra">
+    <div class="H_Extra_Header">
+        <div>
+            <p>总学分</p>
+
+            <p>98.00</p>
+        </div>
+        <div>
+            <p>总积分</p>
+
+            <p>98.00</p>
+        </div>
+        <div>
+            <p>总活动数</p>
+
+            <p>98.00</p>
+        </div>
+    </div>
+    <div class="H_extramural_Line clearfix">
+    	<div class="L-echar-title">
+    		<div class="L-img-title"></div>
+    		<div>&nbsp;&nbsp;学分/学期</div>
+    	</div>
+        <div id="H_ECharts_Line"></div>
+    </div>
+    <div class="H_extramural_Line clearfix">
+    	<div class="L-echar-title">
+    		<div class="L-img-title"></div>
+    		<div>&nbsp;&nbsp;活动参与次数</div>
+    	</div>
+        <div id="H_ECharts"></div>
+        <ul class="L_extramural_detail">
+        	<li><span>道德修养</span><span>&emsp13;18</span><span>(18%)</span></li>
+        	<li><span>道德修养</span><span>&emsp13;18</span><span>(18%)</span></li>
+        	<li><span>道德修养</span><span>&emsp13;18</span><span>(18%)</span></li>
+        	<li><span>道德修养</span><span>&emsp13;18</span><span>(18%)</span></li>
+        	<li><span>校企孵化O2O平台</span><span>&emsp13;18</span><span>(18%)</span></li>
+        	<li><span>校企孵化O2O平台</span><span>&emsp13;18</span><span>(18%)</span></li>
+        </ul>
+    </div>
+    <div class="H_Extra_Footer">
+        <header>
+            <!--<div class="L-echar-title">-->
+	    		<div class="L-img-detail"></div>
+	    		<div>&nbsp;&nbsp;明细</div>
+    		<!--</div>-->
+        </header>
+        <ul>
+            <li>
+                <header>
+                    <p class="name">农家书屋农家书屋2</p>
+                    <p class="date">7/12</p>
+                </header>
+                <div>
+                    <p>分类&emsp13;:&emsp13;活动参与（PU平台活动）--道德修养</p>
+                    <p>学分&emsp13;:&emsp13;100</p>
+                    <p>积分&emsp13;:&emsp13;苏州</p>
+                </div>
+            </li>
+            <li>
+                <header>
+                    <p class="name">农家书屋农家书屋2</p>
+                    <p class="date">7/12</p>
+                </header>
+                <div>
+                    <p>分类&emsp13;:&emsp13;活动参与（PU平台活动）--道德修养</p>
+                    <p>学分&emsp13;:&emsp13;100</p>
+                    <p>积分&emsp13;:&emsp13;苏州</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/echarts/dist/echarts.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/extra.js"></script>
+<script>
+	var page=1;
+	var loadingStr = '<div class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
+	var noneStr = '<div class="nonestr">没有记录</div>';
+	var loadingShow = false;
+	var html = $(".H_Extra_Footer ul").html();
+	$(function () {
+		getdata();
+	});
+	
+	function getdata(){
+		if (!loadingShow) {
+			$(".H_Extra_Footer ul").append(loadingStr);
+			loadingShow = true;
+			getAjaxNews();
+		}
+	
+	}
+		
+	$(window).scroll(function(){
+		var document = window.document;
+		var top = document.body.scrollTop || document.documentElement.scrollTop
+				|| 0;
+		top += document.documentElement.clientHeight;
+		var height = document.documentElement.scrollHeight;
+		if (height - top < 1000) {
+			if (!loadingShow) {
+				$(".H_Extra_Footer ul").append(loadingStr);
+				loadingShow = true;
+				getAjaxNews();
+			}
+		}
+	});
+	
+	function getAjaxNews() {
+			$.ajax({
+				url: "#",
+				//type: 'get',
+				data: {
+					page: page
+				},
+				error: function () {
+				},
+				success: function (data) {
+					//if (data!='0') {
+						$(".spinner").hide();
+					    $(".H_Extra_Footer ul").append(html);
+					//	$(".square_comment_list").append(data);
+						$(".spinner").remove();
+						page++;
+						loadingShow = false;
+					//} else {
+					//	$(".spinner").hide();
+					//	$(".square_comment_list").append(noneStr);
+					//	$(".spinner").remove();
+					//}
+				}
+			});
+	}
+
+</script>
+</html>

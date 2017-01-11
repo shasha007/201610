@@ -1,0 +1,208 @@
+<!--
+Created by lisha on 16/11/15
+describe : “我的青春我做主”全国大学生才艺大赛
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/cropper.min.css" />
+    <link href="common/css/reset.min.css" rel="stylesheet">
+    <link href="common/css/style.css" rel="stylesheet">
+    <title>“我的青春我做主”全国大学生才艺大赛</title>
+</head>
+<body class="L-sign">
+<div class="L-sign-section">
+			<div class="L-photo">
+	    	<p><span class="tit">封面</span>&emsp13;&emsp13;&emsp13;选择上传1-5张照片，第一张为封面</p>
+	    	 <div class="container" id="crop-avatar">
+				<div class="loadBox " uptype="base">
+				    <ul class="preview clearfix">
+				        <li class="avatar-view-input">
+				            <img class="show_input" src="common/images/u65.png">
+				        </li>
+				        <li class="avatar-view">
+				            <img class="show_input" src="common/images/u65.png">
+				            <span class="delete" onclick="deletePhoto(this)"></span>
+				        </li>
+				        <!--<input type="file" accept="image/*" class="file_input">-->
+				    </ul>
+				</div>
+				
+				    <!-- Cropping modal -->
+					<div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+					    <div class="modal-dialog modal-lg">
+					        <div class="modal-content">
+					            <form class="avatar-form" action="crop.php" enctype="multipart/form-data" method="post">
+					                <div class="modal-header">
+					                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+					                    <h4 class="modal-title" id="avatar-modal-label">更换头像</h4>
+					                </div>
+					                <div class="modal-body">
+					                    <div class="avatar-body">
+					
+					                        <!-- Upload image and data -->
+					                        <div class="avatar-upload">
+					                            <input class="avatar-src" name="avatar_src" type="hidden"/>
+					                            <input class="avatar-data" name="avatar_data" type="hidden"/>
+					                            <!--<label for="avatarInput">头像上传</label>-->
+					                            <input class="avatar-input" id="avatarInput" name="avatar_file" type="file"/>
+					                        </div>
+					
+					                        <!-- Crop and preview -->
+					                        <div class="row">
+					                            <div class="col-md-9">
+					                                <div class="avatar-wrapper"></div>
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					                <!--旋转按钮-->
+					                	<div class="L-index-b">
+											<a class="L-rotate-left" href="">
+											<img class="rotate-btn" src="common/images/rotate11.png">
+											</a>
+											<a class="L-rotate-right" href="">
+											<img class="rotate-btn" src="common/images/rotate22.png">
+											</a>
+										</div>
+					                    <div class="row avatar-btns">
+	                                        <div class="col-md-3 L-done-photo">
+	                                            <button class="btn btn-primary btn-block avatar-save" type="button" onclick="goback()">Done</button>
+	                                        </div>
+	                                   </div>
+					            </form>
+					        </div>
+					    </div>
+					</div><!-- /.modal -->
+			</div>
+	    </div>
+    
+    <div class="L-video">
+    	<p><span class="tit">视频</span>&emsp13;&emsp13;&emsp13;可添加1个视频（可不添加）</p>
+		<div class="L-video-addr"><input type="text"  placeholder="请输入视频地址"/></div>
+    </div>
+    <div class="L-type">
+		<div>
+			<span class="tit">类别</span>&emsp13;&emsp13;&emsp13;
+			<ul>
+				<li data-checked="false">
+					<div><img src="common/images/notchoose.png"></div><span>乐器</span>
+				</li>
+				<li data-checked="true">
+					<div><img src="common/images/notchoose.png"></div><span>形体</span>
+				</li>
+				<li data-checked="true">
+					<div><img src="common/images/notchoose.png"></div><span>声乐</span>
+				</li>
+				<li data-checked="true">
+					<div><img src="common/images/notchoose.png"></div><span>语言</span>
+				</li>
+				<li data-checked="true">
+					<div><img src="common/images/notchoose.png"></div><span>其他</span>
+				</li>
+			</ul>
+		</div>
+    </div>
+    <div class="L-detaile">
+    	<p><span class="tit">本人姓名</span><input type="text" placeholder="请输入姓名或昵称"/></p>
+		<p><span class="tit">参赛宣言</span><input type="text" placeholder="一句话描述自己的参赛宣言"/></p>    
+    	<p><span class="tit">手机</span><input type="tel" placeholder="请输入手机"/></p>
+    	<div><span class="tit sex">性别</span>
+    		<ul>
+				<li data-checked="false">
+					<div><img src="common/images/notchoose.png"></div><span>男</span>
+				</li>
+				<li data-checked="true">
+					<div><img src="common/images/notchoose.png"></div><span>女</span>
+				</li>
+			</ul>
+    	</div>
+    </div>
+    <p class="L-sign-con">请如实填写报名信息，提交信息为唯一获奖凭证</p>
+    <button class="L-sign-submit">提交报名</button>
+    <a href="rule.html" class="L-rule-see">提交报名即可认同参赛协议</a>
+    <footer class="indexFoot">
+        <div><a href="list.html">排名</a></div>
+        <div  @click="follow(this)" class="footer_Follow" data-client="wechat">关注我</div>
+        <!--<div>天平基金</div>-->
+    </footer>
+    
+</div>
+
+
+
+<!--loading-->
+<div class="loading-baground">
+	<div class="h-loading">
+	    <div class="h-animate">
+	    </div>
+	</div>
+</div>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="common/js/cropper.min.js"></script>
+<script src="common/js/main.js"></script>
+<!--<script src="bower_components/requirejs/require.js" data-main="common/js/index"></script>-->
+<!--<script src="common/js/exif.js"></script>
+<script src="common/js/uploadImg.js"></script>-->
+<script>
+	function chooseType(){
+		var index=0;
+		var li=document.getElementsByClassName("L-type")[0].getElementsByTagName("li");
+		for(var i=0;i<li.length;i++){
+			li[i].addEventListener("click",select);
+			li[i].index=i;
+		}
+		function select(){
+			li[index].setAttribute("data-checked",false);
+			li[index].getElementsByTagName("div")[0].getElementsByTagName("img")[0].setAttribute('src','common/images/notchoose.png');
+			index=this.index;
+			this.setAttribute("data-checked",true);
+			this.getElementsByTagName("div")[0].getElementsByTagName("img")[0].setAttribute('src','common/images/choose.png');
+		}
+	}
+	function chooseSex(){
+		var index=0;
+		var li=document.getElementsByClassName("L-detaile")[0].getElementsByTagName("li");
+		for(var i=0;i<li.length;i++){
+			li[i].addEventListener("click",select);
+			li[i].index=i;
+		}
+		function select(){
+			li[index].setAttribute("data-checked",false);
+			li[index].getElementsByTagName("div")[0].getElementsByTagName("img")[0].setAttribute('src','common/images/notchoose.png');
+			index=this.index;
+			this.setAttribute("data-checked",true);
+			this.getElementsByTagName("div")[0].getElementsByTagName("img")[0].setAttribute('src','common/images/choose.png');
+		}
+	}
+	
+	function goback(){
+		$('#avatar-modal').hide();
+		$('.modal-backdrop.in').css('opacity','0');
+		
+//		$('.modal-backdrop').remove();
+		$('.avatar-view:last-child').clone(true).insertAfter(".avatar-view:last-child");
+	}
+		
+	//删除图片
+	function deletePhoto(obj){
+		$(obj).parent().remove();
+	}
+
+	window.onload=function(){
+		chooseType();
+		chooseSex();
+	}
+</script>
+</html>

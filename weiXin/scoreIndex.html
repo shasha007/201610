@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>我的PU</title>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+</head>
+<body>
+<!--头部说明-->
+<div class="w-head">
+	<img src="img/back.png" class="w-back" onclick="history.back(-1)">
+	<span>本学期学分任务栏</span>
+	<a href="#" class="w-home"><img src="img/home.png" ></a>
+</div>
+<div>
+    <header class="score-work-header">
+        <p>江苏省苏州市口袋大学</p>
+        <p>第二学期</p>
+    </header>
+    <ul class="score-work-section">
+    	<li>
+    		<p><span class="L-score-title"></span><span class="pull-left">活动类学分</span><a href="#" class="pull-right">查看详情&nbsp;&nbsp;<img src="img/liuZuo.png"/></a></p>
+			<div class="L-score-ccc">
+				<div>
+					<div class="example-circle-container">
+					
+					</div>
+					
+					<p class="L-score-all" >可得<span id="L-score-all">40.29</span></p>
+					<p class="L-score-num3" id="L-score-can">20.06</p>
+					<span class="L-score-status3">已得</span>
+				</div>
+			</div>
+			
+    	</li>
+    	<li>
+    		<p><span class="L-score-title"></span><span class="pull-left">申请类学分</span><a href="#" class="pull-right">查看详情&nbsp;&nbsp;<img src="img/liuZuo.png"/></a></p>
+			<div class="L-score-ccc">
+				<div>
+					<div class="example-circle-container2">
+					
+					</div>
+					
+					<p class="L-score-all">可得<span id="L-score-all2">40.29</span></p>
+					<p class="L-score-num3" id="L-score-can2">30.06</p>
+					<span class="L-score-status3">已得</span>
+				</div>
+			</div>
+			
+    	</li>
+    	<li>
+    		<p><span class="L-score-title"></span><span class="pull-left">活动类学分</span><a href="#" class="pull-right">查看详情&nbsp;&nbsp;<img src="img/liuZuo.png"/></a></p>
+			<div class="L-score-ccc">
+				<div>
+					<div class="example-circle-container3">
+					
+					</div>
+					<p class="L-score-all">可得180</p>
+					<p class="L-score-num1" id="L-score-num1">180.23</p>
+					<span class="L-score-status1">溢出</span>
+				</div>
+			</div>
+			
+    	</li>
+    	<li>
+    		<p><span class="L-score-title"></span><span class="pull-left">申请类学分</span><a href="#" class="pull-right">查看详情&nbsp;&nbsp;<img src="img/liuZuo.png"/></a></p>
+			<div class="L-score-ccc">
+				<div>
+					<div class="example-circle-container4">
+					
+					</div>
+					<p class="L-score-all">可得20</p>
+					<p class="L-score-num2" id="L-score-num2">20.00</p>
+					<span class="L-score-status2">已满</span>
+				</div>
+			</div>
+			
+    	</li>
+    	<li>
+    		<p><span class="L-score-title"></span><span class="pull-left">活动类学分</span><a href="#" class="pull-right">查看详情&nbsp;&nbsp;<img src="img/liuZuo.png"/></a></p>
+			<div class="L-score-ccc">
+				<div>
+					<div class="example-circle-container5">
+					
+					</div>
+					<p class="L-score-all2">可得20</p>
+					<p class="L-score-num4" id="L-score-num4">0.00</p>
+					<span class="L-score-status4">暂无</span>
+				</div>
+			</div>
+			
+    	</li>
+    </ul>
+</div>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/circle-progress.js"></script>
+<script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
+<script>
+	//已得
+    var circle = new ProgressBar.Circle('.example-circle-container', {
+        color: '#61bf7b',
+        strokeWidth: 3,
+        fill: '#FFF',
+        duration: 500,
+        easing: '',
+        trailColor: "#ddd"
+    });
+//	circle.setText("<p class=\"L-score-num3\" id=\"L-score-num3\"><span id=\"L-score-can\">10</span>/<span id=\"L-score-all\" style=\"color: #000000;\">120</span></p>");
+	var can = parseInt(document.getElementById("L-score-can").innerText);
+	var all = parseInt(document.getElementById("L-score-all").innerText);
+	var limit=(can/all).toFixed(2);
+	console.log(limit)
+	circle.animate(limit, function() {
+    })
+	
+	var circle2 = new ProgressBar.Circle('.example-circle-container2', {
+        color: '#61bf7b',
+        strokeWidth: 3,
+        fill: '#FFF',
+        duration: 500,
+        easing: '',
+        trailColor: "#ddd"
+    });
+	var can2 = parseInt(document.getElementById("L-score-can2").innerText);
+	var all2 = parseInt(document.getElementById("L-score-all2").innerText);
+	var limit2=(can2/all2).toFixed(2);
+    circle2.animate(limit2, function() {
+    })
+    //溢出
+    var circle3 = new ProgressBar.Circle('.example-circle-container3', {
+        color: '#f0411f',
+        strokeWidth: 3,
+        fill: '#FFF',
+        duration: 500,
+        easing: '',
+        trailColor: "#ddd"
+    });
+    circle3.animate(1, function() {
+    })
+    //已满
+    var circle4 = new ProgressBar.Circle('.example-circle-container4', {
+        color: '#35a5f2',
+        strokeWidth: 3,
+        fill: '#FFF',
+        duration: 500,
+        easing: '',
+        trailColor: "#ddd"
+    });
+    circle4.animate(1, function() {
+    })
+    //暂无
+    var circle4 = new ProgressBar.Circle('.example-circle-container5', {
+        color: '#ddd',
+        strokeWidth: 3,
+        fill: '#FFF',
+        duration: 500,
+        easing: '',
+        trailColor: "#ddd"
+    });
+    circle4.animate(1, function() {
+    })
+</script>
+</html>
